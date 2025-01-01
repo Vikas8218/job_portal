@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { MantineProvider, Slider } from '@mantine/core';
+import '@mantine/core/styles.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    <MantineProvider>
+  <h1 className="text-3xl  text-green-400 font-bold underline">
+      Hello world!
+    </h1>
+    <Slider
+      color="lime"
+      marks={[
+        { value: 20, label: '20%' },
+        { value: 50, label: '50%' },
+        { value: 80, label: '80%' },
+      ]}
+    />
+
+    </MantineProvider>
+
+      );
 }
 
 export default App;
