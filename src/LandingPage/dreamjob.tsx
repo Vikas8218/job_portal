@@ -27,19 +27,19 @@ const dreamjob =()=>{
       <Avatar>+9k</Avatar>
     </Avatar.Group>
   </div>
-  <div>
-    <div>
-<div>
-  <img src="/.Google.png" alt="" />
+  <div className="absolute  -left-5 w-fit top-[26%] border-bright-sun-400 border rounded-lg p-2 backdrop-blur-md flex flex-col">
+    <div className="flex gap-2 items-center">
+<div className="w-10 h-10 p-1 bg-mine-shaft-900 rounded-lg">
+  <img src="/Google.png" alt="" />
 </div>
-<div>
-  <div></div>
-  <div></div>
+<div className="text-sm text-mine-shaft-100">
+  <div>Software Engineer</div>
+  <div className="text-mine-shaft-200 text-xs">New York</div>
 </div>
     </div>
-    <div>
-      <span></span>
-      <span></span>
+    <div className="flex gap-2 mt-5 justify-around text-mine-shaft-200 text-xs">
+      <span>1 day ago</span>
+      <span>120 Applicants</span>
     </div>
   </div>
 </div>
